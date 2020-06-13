@@ -1,4 +1,4 @@
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   #home {
     svg + span {
         right: 246px;
@@ -7,7 +7,7 @@
     .home__content {
       background-position-y: -30px;
       background-position-x: right;
-      background-position-x: 899px;
+      background-position-x: 860px;
       padding-top: 5rem;
       position: relative;
       .home__text {
@@ -64,7 +64,158 @@
         }
         .categories {
             margin-top: 0;
+
+            span {
+                right: -6px;
+            }
+            img {
+                display: none;
+            }
+        }
+        .products {
+            margin-top: 0;
+            h6 {
+                font-size: 25px;
+            }
+             li {
+                font-size: 10px;
+                font-weight: 700;
+                margin-bottom: 7px;
         }
      }
+     svg {
+        position: relative;
+    }
+     .shop {
+       position: absolute;
+       top: 416px;
+       right: 105px;
+        a {
+            color: $primary-color;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+       span {
+            display: none;
+        }
+        p, a {
+            font-size: 10px;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        hr {
+            margin: 10px 0 3px ;
+
+        }
+        button {
+            padding: 3px 5px;
+            font-size: 11px;
+        }
+        h6 {
+            font-size: 13px;
+        }
+     }
+     svg + span {
+         display: none;
+     }
+     svg {
+         position: relative;
+     }
+
    }
+ }
+
+
+
+
+
+
+
+ #clothes {
+ 
+ .clothes__text {
+  text-align: left;
+  padding: 6rem 0 ;
+
+   h4 {
+     text-align: left;
+     padding-left: 0;
+   }
+   h1 {
+     padding-left: 0;
+     font-size: 35px;
+   }
+   button {
+    margin: auto;
+    display: flex;
+   }
+  }
+
+
+  .swiper-button-next {
+    right: 10px;
+    transform: rotate(90deg);
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+    transform: rotate(90deg);
+  }
+
+
+ }
+
+
+
+.connect__content {
+    padding: 0;
+    background-position-x: -357px;
+    text-align: center;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    position: relative;
+  .connect__text {
+    color: white;
+    z-index: 1;
+
+    
+  }
+    .over-lay {
+      position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    }
+    h5::before, 
+    h2::after, 
+    button::after {
+      background-color: white;
+    }
+} 
+
+
+footer {
+.about__us {
+  // display: flex;
+  // text-align: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
