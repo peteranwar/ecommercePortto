@@ -9,6 +9,7 @@ $secondary-color: #dfdedc;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 html{
   scroll-behavior: smooth;
@@ -33,6 +34,9 @@ html{
 .scrolltop.active {
   opacity: 1;
 }
+
+
+
 // Home section
 #home {
   background: $secondary-color;
@@ -62,8 +66,9 @@ html{
   .home__content {
     background: url(../imgs/bg-1.jpg);
     display: inline-flex;
-    width: 1200px;
-    height: 570px;
+    // width: 1200px;
+    width: 100%;
+    height: 580px;
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -391,6 +396,14 @@ html{
   }
 }
 
+.nav__scroll {
+  padding-top: 7px !important;
+  box-shadow: 10px 5px 5px #290dc530;
+
+  .navbar-brand img {
+    width: 60px !important;
+  }
+}
 // clothes section
 #clothes {
   background: url("../imgs/bg-2.jpg");
@@ -564,7 +577,7 @@ html{
 .connect__content {
   background: url(../imgs/bg-4.jpg);
   display: inline-flex;
-  width: 98.7vw;
+  // width: 98.7vw;
   height: 100vh;
   background-size: cover;
   background-position: center;

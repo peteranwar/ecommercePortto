@@ -63,8 +63,8 @@ html {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 1200px;
-  height: 570px;
+  width: 100%;
+  height: 580px;
   background-size: cover;
   background-position: center;
   background-size: cover;
@@ -439,6 +439,16 @@ html {
   margin-bottom: 7px;
 }
 
+.nav__scroll {
+  padding-top: 7px !important;
+  -webkit-box-shadow: 10px 5px 5px #290dc530;
+          box-shadow: 10px 5px 5px #290dc530;
+}
+
+.nav__scroll .navbar-brand img {
+  width: 60px !important;
+}
+
 #clothes, #glasses {
   background: url("../imgs/bg-2.jpg");
   background-size: cover;
@@ -635,7 +645,6 @@ html {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 98.7vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -844,7 +853,14 @@ html {
   #home .ournav .arrow {
     display: none;
   }
-  #home .ournav .features, #home .ournav .categories, #home .ournav .products, #home .ournav .pages, #home .ournav .links, #home .ournav .usd, #home .ournav .eng, #home .ournav .shop {
+  #home .ournav .features,
+  #home .ournav .categories,
+  #home .ournav .products,
+  #home .ournav .pages,
+  #home .ournav .links,
+  #home .ournav .usd,
+  #home .ournav .eng,
+  #home .ournav .shop {
     position: initial;
   }
   #home .ournav .categories {
@@ -885,7 +901,8 @@ html {
   #home .ournav .shop span {
     display: none;
   }
-  #home .ournav .shop p, #home .ournav .shop a {
+  #home .ournav .shop p,
+  #home .ournav .shop a {
     font-size: 10px;
     padding-bottom: 0;
     margin-top: 0;
@@ -927,13 +944,9 @@ html {
   }
   #clothes .swiper-button-next, #glasses .swiper-button-next {
     right: 10px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   #clothes .swiper-button-prev, #glasses .swiper-button-prev {
     left: 10px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   .connect__content {
     padding: 0;
@@ -961,6 +974,19 @@ html {
   .connect__content h2::after,
   .connect__content button::after {
     background-color: white;
+  }
+  .newsletter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  .newsletter h6 {
+    margin-bottom: 8px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
