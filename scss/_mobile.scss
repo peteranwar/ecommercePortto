@@ -172,6 +172,7 @@
     align-items: flex-end;
     padding-bottom: 5rem;
     position: relative;
+    padding-right: 15px;
     .connect__text {
       color: white;
       z-index: 1;
@@ -263,8 +264,7 @@
 
     }
   }
-  }
-   
+
 
 
   .connect__content {
@@ -272,7 +272,7 @@
     background-position-x: 35%; 
   }
   .connect__content .connect__text {
-    padding-right: 15px;
+    // padding-right: 15px;
 
     h1 {
       font-size: 2.4rem;
@@ -285,3 +285,7 @@
       left: 50.5%;
   }
   }
+
+  }
+   
+

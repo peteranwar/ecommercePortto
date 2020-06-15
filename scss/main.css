@@ -136,7 +136,7 @@ html {
   height: 20rem;
   bottom: -1px;
   background: #161616;
-  left: 99%;
+  right: -1px;
 }
 
 #home .fa-angle-double-down {
@@ -956,6 +956,7 @@ html {
             align-items: flex-end;
     padding-bottom: 5rem;
     position: relative;
+    padding-right: 15px;
   }
   .connect__content .connect__text {
     color: white;
@@ -1025,26 +1026,18 @@ html {
     padding-right: 0 !important;
     font-weight: 700;
   }
-}
-
-.connect__content {
-  background-position-x: 35%;
-}
-
-.connect__content .connect__text {
-  padding-right: 15px;
-}
-
-.connect__content .connect__text h1 {
-  font-size: 2.4rem;
-}
-
-.connect__content .connect__text button {
-  margin-left: 9.5rem;
-}
-
-.connect__content .connect__text h5::before {
-  bottom: 70%;
-  left: 50.5%;
+  .connect__content {
+    background-position-x: 35%;
+  }
+  .connect__content .connect__text h1 {
+    font-size: 2.4rem;
+  }
+  .connect__content .connect__text button {
+    margin-left: 9.5rem;
+  }
+  .connect__content .connect__text h5::before {
+    bottom: 70%;
+    left: 50.5%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

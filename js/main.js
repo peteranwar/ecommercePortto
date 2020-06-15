@@ -8,26 +8,31 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    350: {
-      slidesPerView: 1,
+    1024: {
+      slidesPerView: 5,
       spaceBetween: 30,
-    },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 10,
     },
     768: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
-    1024: {
-      slidesPerView: 5,
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    350: {
+      slidesPerView: 1,
       spaceBetween: 30,
     },
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    }
+
   },
   // on: {
   //   resize: function () {
