@@ -5,9 +5,10 @@
       top: 355px;
     }
     .home__content {
-      background-position-y: -30px;
+      // background-position-y: -30px;
       background-position-x: right;
-      background-position-x: 860px;
+      // background-position-x: 860px;
+      background-position-x: 65%;
       padding-top: 5rem;
       position: relative;
       .home__text {
@@ -33,9 +34,8 @@
       text-align: left;
 
       &::before {
-        right: 40px;
-        // bottom: 520px;
-        top: -106px;
+        right: 10.8%;
+        top: -28.5%;
       }
 
       h1,
@@ -146,7 +146,7 @@
       }
       h1 {
         padding-left: 0;
-        font-size: 35px;
+        font-size: 33px;
       }
       button {
         margin: auto;
@@ -207,3 +207,81 @@
     }
   }
 }
+
+
+
+
+@media screen and (max-width: 320px){
+  #home {
+    .ournav .shop {
+      right: 12%;
+      top: 80%;
+      }
+      
+      .home__content {
+        background-position-x: 70%;
+        background-position-y: 0;
+      }
+      .home__content .home__text {
+
+        &:before {
+          right: 12.8%;
+          top: -37%;
+        }
+      h1 {
+        font-size: 2.3rem;
+         &:after {
+          right: 65.8%;
+          bottom: 304%;
+         }
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      button {
+        margin-left: 90px;
+      }
+    
+      }
+    
+  } 
+    
+
+  #clothes{
+    background-position-x: 24% ;
+  }
+  #glasses {
+    background-position-x: 73% !important ;
+  }
+  .clothes__text {
+
+    h1 {
+      padding-right: 0 !important;
+      font-weight: 700;
+
+
+
+    }
+  }
+  }
+   
+
+
+  .connect__content {
+  
+    background-position-x: 35%; 
+  }
+  .connect__content .connect__text {
+    padding-right: 15px;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+    button {
+      margin-left: 9.5rem;
+    }
+     h5::before {
+      bottom: 70%;
+      left: 50.5%;
+  }
+  }

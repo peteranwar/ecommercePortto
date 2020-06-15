@@ -85,8 +85,8 @@ html {
   width: 10.5rem;
   height: 0.5rem;
   background: #161616;
-  right: 150px;
-  top: 28px;
+  right: 20%;
+  top: 5.5%;
 }
 
 #home .home__content .home__text h1,
@@ -108,8 +108,8 @@ html {
   width: 0.4rem;
   height: 4.1rem;
   background: #161616;
-  right: 168px;
-  bottom: 70px;
+  right: 37%;
+  bottom: 97%;
 }
 
 #home .home__content .home__text h2 {
@@ -136,7 +136,7 @@ html {
   height: 20rem;
   bottom: -1px;
   background: #161616;
-  right: -1px;
+  left: 99%;
 }
 
 #home .fa-angle-double-down {
@@ -801,9 +801,8 @@ html {
     top: 355px;
   }
   #home .home__content {
-    background-position-y: -30px;
     background-position-x: right;
-    background-position-x: 860px;
+    background-position-x: 65%;
     padding-top: 5rem;
     position: relative;
   }
@@ -829,8 +828,8 @@ html {
     text-align: left;
   }
   #home .home__content .home__text::before {
-    right: 40px;
-    top: -106px;
+    right: 10.8%;
+    top: -28.5%;
   }
   #home .home__content .home__text h1,
   #home .home__content .home__text h2 {
@@ -934,7 +933,7 @@ html {
   }
   #clothes .clothes__text h1, #glasses .clothes__text h1, #clothes .glasses__text h1, #glasses .glasses__text h1 {
     padding-left: 0;
-    font-size: 35px;
+    font-size: 33px;
   }
   #clothes .clothes__text button, #glasses .clothes__text button, #clothes .glasses__text button, #glasses .glasses__text button {
     margin: auto;
@@ -988,5 +987,64 @@ html {
   .newsletter h6 {
     margin-bottom: 8px !important;
   }
+}
+
+@media screen and (max-width: 320px) {
+  #home .ournav .shop {
+    right: 12%;
+    top: 80%;
+  }
+  #home .home__content {
+    background-position-x: 70%;
+    background-position-y: 0;
+  }
+  #home .home__content .home__text:before {
+    right: 12.8%;
+    top: -37%;
+  }
+  #home .home__content .home__text h1 {
+    font-size: 2.3rem;
+  }
+  #home .home__content .home__text h1:after {
+    right: 65.8%;
+    bottom: 304%;
+  }
+  #home .home__content .home__text h2 {
+    font-size: 2rem;
+  }
+  #home .home__content .home__text button {
+    margin-left: 90px;
+  }
+  #clothes, #glasses {
+    background-position-x: 24%;
+  }
+  #glasses {
+    background-position-x: 73% !important;
+  }
+  .clothes__text h1, .glasses__text h1 {
+    padding-right: 0 !important;
+    font-weight: 700;
+  }
+}
+
+.connect__content {
+  background-position-x: 35%;
+}
+
+.connect__content .connect__text {
+  padding-right: 15px;
+}
+
+.connect__content .connect__text h1 {
+  font-size: 2.4rem;
+}
+
+.connect__content .connect__text button {
+  margin-left: 9.5rem;
+}
+
+.connect__content .connect__text h5::before {
+  bottom: 70%;
+  left: 50.5%;
 }
 /*# sourceMappingURL=main.css.map */

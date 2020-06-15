@@ -87,8 +87,10 @@ html{
         width: 10.5rem;
         height: 0.5rem;
         background: $primary-color;
-        right: 150px;
-        top: 28px;
+        // right: 150px;
+        // top: 28px;
+        right: 20% ;
+        top: 5.5%;
       }
 
       h1,
@@ -108,8 +110,10 @@ html{
           width: 0.4rem;
           height: 4.1rem;
           background: $primary-color;
-          right: 168px;
-          bottom: 70px;
+          // right: 168px;
+          // bottom: 70px;
+          right: 37%;
+          bottom: 97% ;
         }
       }
 
@@ -134,7 +138,8 @@ html{
           height: 20rem;
           bottom: -1px;
           background: $primary-color;
-          right: -1px;
+          // right: -1px;
+          left: 99%;
         }
       }
     }
