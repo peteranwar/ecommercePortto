@@ -1,5 +1,7 @@
 $primary-color: #161616;
 $secondary-color: #dfdedc;
+@import 'headest' ;
+
 
 @mixin easeInOut {
   transition: all 0.4s ease-in-out;
@@ -376,19 +378,18 @@ html{
       left: 220px;
     }
 
-    span {
+    .close {
       border-radius: 50%;
       border: 1px solid white;
       padding: 1px 2px;
       box-shadow: -5px 4px 9px 1px #dfdedc;
       position: absolute;
       top: 0;
-      left: 80px;
       background: white;
       cursor: pointer;
     }
-    span ~ span {
-      top: 80px;
+    .close ~ .close {
+      top: 30%;
     }
 
     img {
@@ -409,7 +410,7 @@ html{
   }
 }
 // clothes section
-#clothes {
+#clothes, #featured__products {
   background: url("../imgs/bg-2.jpg");
   background-size: cover;
   background-position: center;

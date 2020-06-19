@@ -1,3 +1,402 @@
+#headest {
+  margin-top: 80px;
+}
+
+#headest a,
+#headest i {
+  color: #aeaca7;
+}
+
+#headest img {
+  width: 100%;
+}
+
+#headest #exzoom {
+  width: 100%;
+}
+
+#headest .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#headest .old_price {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: line-through;
+  color: #d3d1cf;
+  padding-right: 15px;
+}
+
+#headest .new_price {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#headest .colors h5 {
+  display: inline-block;
+  margin: 27px 0 30px;
+}
+
+#headest .colors a:nth-of-type(1) {
+  background: #6085a5;
+  padding: 1px 5px;
+  margin: 2px;
+}
+
+#headest .colors a:nth-of-type(1) i {
+  color: white;
+}
+
+#headest .colors a:nth-of-type(2) {
+  background: #ab6e6e;
+  padding: 1px 12px;
+  margin: 2px;
+}
+
+#headest .colors a:nth-of-type(3) {
+  background: #b19970;
+  padding: 1px 12px;
+  margin: 2px;
+}
+
+#headest .colors a:nth-of-type(4) {
+  background: #11426b;
+  padding: 1px 12px;
+  margin: 2px;
+}
+
+#headest .add_to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#headest .add_to .add_and_remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#headest .add_to .add_and_remove a,
+#headest .add_to .add_and_remove p {
+  border: 1px solid #dfdedc;
+  padding: 3px 10px;
+  margin-bottom: 0;
+}
+
+#headest .add_to button {
+  padding: 5px 10px;
+  background: white;
+  border: 1px solid #dfdedc;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#headest .add_to button:hover {
+  color: white;
+  background: black;
+}
+
+#headest .add_to .add__to__wishlist i, #headest .add_to .add__to__compare i {
+  padding: 10px;
+  border: 1px solid #dfdedc;
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#headest .add_to .add__to__wishlist i:hover, #headest .add_to .add__to__compare i:hover {
+  color: white;
+  background: black;
+}
+
+#headest .share {
+  padding: 30px 0;
+}
+
+#headest .share h5 {
+  display: inline-block;
+}
+
+#headest .share a {
+  background: #161616;
+  padding: 7px 11px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#headest .share a i {
+  color: #fff;
+}
+
+#headest .share a:hover {
+  background: white;
+  border: 1px solid #161616;
+}
+
+#headest .share a:hover i {
+  color: #161616;
+}
+
+#headest .logo__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: -webkit-right;
+}
+
+#headest .voreed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#headest .voreed i {
+  padding-right: 35px;
+  font-size: 30px;
+  color: #4c4c4c;
+}
+
+#headest .voreed p {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+#headest .banner {
+  position: relative;
+}
+
+#headest .banner:hover::after {
+  opacity: 1;
+}
+
+#headest .banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#main {
+  color: #96938c;
+}
+
+#main .nav-link {
+  color: black;
+  font-weight: 700;
+}
+
+#main h3, #main h5 {
+  color: black;
+}
+
+#main #myTabContent {
+  padding: 40px 0;
+}
+
+#main .text {
+  padding: 9px 50px;
+  margin-bottom: 20px;
+  border-color: #dfdedc;
+}
+
+#main button {
+  padding: 9px 25px;
+  margin-left: 10px;
+  border-radius: 0;
+  background: black;
+}
+
+#main ul li i {
+  color: black;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+#main .swiper-container_2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+#main .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .product__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .product__container:hover a::after {
+  opacity: 1;
+}
+
+#main .product__container a {
+  position: relative;
+  width: 80px;
+  height: 70px;
+}
+
+#main .product__container a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#main .product__container i {
+  font-size: 11px;
+  cursor: pointer;
+}
+
+#main .product__container p {
+  margin-bottom: 0;
+  color: #aeaca7 !important;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#main .product__container p:hover {
+  color: black !important;
+}
+
+#main .product__container h4 {
+  font-size: 18px;
+  height: 10%;
+}
+
+#main .swiper-button-prev:after,
+#main .swiper-button-next:after {
+  font-size: 15px;
+  color: black;
+}
+
+#main .swiper-button-next,
+#main .swiper-button-prev {
+  top: 42px;
+}
+
+#main .swiper-button-prev {
+  left: 220px;
+}
+
+#main h6 {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 35px 0 20px;
+}
+
+#main .radio {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+#main #reviews th, #main #reviews td {
+  padding: 10px;
+}
+
+#main #reviews label {
+  color: black;
+}
+
+#main #reviews .lg_iput {
+  padding: 5rem;
+}
+
+#featured__products {
+  background: #dfdedc !important;
+  height: 100vh !important;
+}
+
+#featured__products .swiper-container_3 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#featured__products .swiper-pagination {
+  position: absolute !important;
+}
+
+#featured__products .swiper-pagination-bullet {
+  width: 15px;
+  background: black !important;
+  height: 15px;
+}
+
+#featured__products .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#featured__products .swiper-container-horizontal > .swiper-pagination-bullets, #featured__products .swiper-pagination-custom, #featured__products .swiper-pagination-fraction {
+  bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -415,7 +814,7 @@ html {
   left: 220px;
 }
 
-#home .shop span {
+#home .shop .close {
   border-radius: 50%;
   border: 1px solid white;
   padding: 1px 2px;
@@ -423,13 +822,12 @@ html {
           box-shadow: -5px 4px 9px 1px #dfdedc;
   position: absolute;
   top: 0;
-  left: 80px;
   background: white;
   cursor: pointer;
 }
 
-#home .shop span ~ span {
-  top: 80px;
+#home .shop .close ~ .close {
+  top: 30%;
 }
 
 #home .shop img {
@@ -449,7 +847,7 @@ html {
   width: 60px !important;
 }
 
-#clothes, #glasses {
+#clothes, #glasses, #featured__products {
   background: url("../imgs/bg-2.jpg");
   background-size: cover;
   background-position: center;
@@ -458,43 +856,44 @@ html {
   height: 120vh;
 }
 
-#clothes .clothes__text, #glasses .clothes__text, #clothes .glasses__text, #glasses .glasses__text {
+#clothes .clothes__text, #glasses .clothes__text, #clothes .glasses__text, #glasses .glasses__text, #featured__products .clothes__text, #featured__products .glasses__text {
   text-align: end;
   padding: 8rem 6rem;
 }
 
-#clothes .clothes__text h4, #glasses .clothes__text h4, #clothes .glasses__text h4, #glasses .glasses__text h4 {
+#clothes .clothes__text h4, #glasses .clothes__text h4, #clothes .glasses__text h4, #glasses .glasses__text h4, #featured__products .clothes__text h4, #featured__products .glasses__text h4 {
   text-align: center;
   padding-left: 15.2rem;
   font-weight: 400;
   margin-bottom: 0;
 }
 
-#clothes .clothes__text h1, #glasses .clothes__text h1, #clothes .glasses__text h1, #glasses .glasses__text h1 {
+#clothes .clothes__text h1, #glasses .clothes__text h1, #clothes .glasses__text h1, #glasses .glasses__text h1, #featured__products .clothes__text h1, #featured__products .glasses__text h1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding-right: 3rem;
 }
 
-#clothes .clothes__text button, #glasses .clothes__text button, #clothes .glasses__text button, #glasses .glasses__text button {
+#clothes .clothes__text button, #glasses .clothes__text button, #clothes .glasses__text button, #glasses .glasses__text button, #featured__products .clothes__text button, #featured__products .glasses__text button {
   padding: 12px 15px;
   background-color: #161616;
   margin-bottom: 20px;
 }
 
-#clothes .clothes__text button:hover, #glasses .clothes__text button:hover, #clothes .glasses__text button:hover, #glasses .glasses__text button:hover {
+#clothes .clothes__text button:hover, #glasses .clothes__text button:hover, #clothes .glasses__text button:hover, #glasses .glasses__text button:hover, #featured__products .clothes__text button:hover, #featured__products .glasses__text button:hover {
   opacity: 0.8;
 }
 
 #clothes .swiper-container .swiper-button-next, #glasses .swiper-container .swiper-button-next,
 #clothes .swiper-container .swiper-button-prev,
-#glasses .swiper-container .swiper-button-prev {
+#glasses .swiper-container .swiper-button-prev, #featured__products .swiper-container .swiper-button-next,
+#featured__products .swiper-container .swiper-button-prev {
   font-size: 25px;
   color: #161616;
 }
 
-#clothes .swiper-slide, #glasses .swiper-slide {
+#clothes .swiper-slide, #glasses .swiper-slide, #featured__products .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -509,25 +908,25 @@ html {
   align-items: center;
 }
 
-#clothes .card, #glasses .card {
+#clothes .card, #glasses .card, #featured__products .card {
   border: none;
 }
 
-#clothes .card i, #glasses .card i {
+#clothes .card i, #glasses .card i, #featured__products .card i {
   font-size: 12px;
 }
 
-#clothes .card p, #glasses .card p {
+#clothes .card p, #glasses .card p, #featured__products .card p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-#clothes .card p:hover, #glasses .card p:hover {
+#clothes .card p:hover, #glasses .card p:hover, #featured__products .card p:hover {
   font-weight: 600;
   cursor: pointer;
 }
 
-#clothes .card .add__to, #glasses .card .add__to {
+#clothes .card .add__to, #glasses .card .add__to, #featured__products .card .add__to {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,7 +935,7 @@ html {
           align-items: baseline;
 }
 
-#clothes .card .add__to button, #glasses .card .add__to button {
+#clothes .card .add__to button, #glasses .card .add__to button, #featured__products .card .add__to button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +948,7 @@ html {
   border: 1px solid #dfdedc;
 }
 
-#clothes .card .add__to i, #glasses .card .add__to i {
+#clothes .card .add__to i, #glasses .card .add__to i, #featured__products .card .add__to i {
   border: 1px solid #dfdedc;
   padding: 10px;
   margin: 3px;
@@ -562,17 +961,17 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-#clothes .card .add__to i:first-child, #glasses .card .add__to i:first-child {
+#clothes .card .add__to i:first-child, #glasses .card .add__to i:first-child, #featured__products .card .add__to i:first-child {
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
-#clothes .card .over-lay, #glasses .card .over-lay {
+#clothes .card .over-lay, #glasses .card .over-lay, #featured__products .card .over-lay {
   position: relative;
   width: 100%;
 }
 
-#clothes .card a::after, #glasses .card a::after {
+#clothes .card a::after, #glasses .card a::after, #featured__products .card a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -585,22 +984,22 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-#clothes .card svg, #glasses .card svg {
+#clothes .card svg, #glasses .card svg, #featured__products .card svg {
   margin: 2px;
 }
 
-#clothes .card:hover i, #glasses .card:hover i {
+#clothes .card:hover i, #glasses .card:hover i, #featured__products .card:hover i {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#clothes .card:hover a::after, #glasses .card:hover a::after {
+#clothes .card:hover a::after, #glasses .card:hover a::after, #featured__products .card:hover a::after {
   display: block;
   -webkit-box-shadow: 0px 16px 28px -22px rgba(30, 30, 60, 0.84);
           box-shadow: 0px 16px 28px -22px rgba(30, 30, 60, 0.84);
 }
 
-#clothes .card:hover button, #glasses .card:hover button {
+#clothes .card:hover button, #glasses .card:hover button, #featured__products .card:hover button {
   background-color: #161616;
   color: white;
 }
@@ -611,15 +1010,18 @@ html {
 #clothes .swiper-button-prev:after,
 #glasses .swiper-button-prev:after,
 #clothes .swiper-container-rtl .swiper-button-next:after,
-#glasses .swiper-container-rtl .swiper-button-next:after {
+#glasses .swiper-container-rtl .swiper-button-next:after, #featured__products .swiper-button-next:after,
+#featured__products .swiper-container-rtl .swiper-button-prev:after,
+#featured__products .swiper-button-prev:after,
+#featured__products .swiper-container-rtl .swiper-button-next:after {
   font-size: 20px;
 }
 
-#clothes .swiper-button-next, #glasses .swiper-button-next {
+#clothes .swiper-button-next, #glasses .swiper-button-next, #featured__products .swiper-button-next {
   right: 0px;
 }
 
-#clothes .swiper-button-prev, #glasses .swiper-button-prev {
+#clothes .swiper-button-prev, #glasses .swiper-button-prev, #featured__products .swiper-button-prev {
   left: 0px;
 }
 
