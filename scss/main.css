@@ -1205,11 +1205,36 @@ html {
   #home .home__content {
     background-position-x: right;
     background-position-x: 65%;
-    padding-top: 5rem;
     position: relative;
   }
   #home .home__content .home__text {
-    margin-top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    padding: 0;
+  }
+  #home .home__content .home__text h1 {
+    text-shadow: 3px 5px 10px #290dc530;
+    font-size: 4rem !important;
+    padding: 0 1rem;
+  }
+  #home .home__content .home__text h2 {
+    text-shadow: 3px 5px 18px #290dc530;
+    font-family: serif;
+    padding: 0 1rem;
+  }
+  #home .home__content .home__text button {
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 30px #290be459;
+            box-shadow: inset 2px 2px 30px #290be459;
   }
   #home .home__content .navbar-brand {
     width: 40px;
@@ -1225,13 +1250,8 @@ html {
   #home .navbar-brand img {
     width: 50px;
   }
-  #home .home__content .home__text {
-    padding: 20px 5px;
-    text-align: left;
-  }
   #home .home__content .home__text::before {
-    right: 10.8%;
-    top: -28.5%;
+    display: none;
   }
   #home .home__content .home__text h1,
   #home .home__content .home__text h2 {
@@ -1239,11 +1259,10 @@ html {
   }
   #home .home__content .home__text h1::after,
   #home .home__content .home__text h2::after {
-    right: 196px;
-    bottom: 110px;
+    display: none;
   }
-  #home .home__content .home__text button {
-    margin-left: 150px;
+  #home .home__content .home__text button::after {
+    display: none;
   }
   #home .ournav {
     padding: 3px 5px;
@@ -1362,7 +1381,25 @@ html {
   }
   .connect__content .connect__text {
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 1;
+  }
+  .connect__content .connect__text button {
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 30px #c1b8b0a3;
+            box-shadow: inset 2px 2px 30px #c1b8b0a3;
   }
   .connect__content .over-lay {
     position: absolute;
@@ -1375,7 +1412,7 @@ html {
   .connect__content h5::before,
   .connect__content h2::after,
   .connect__content button::after {
-    background-color: white;
+    display: none;
   }
   .newsletter {
     -webkit-box-orient: vertical;
@@ -1389,57 +1426,6 @@ html {
   }
   .newsletter h6 {
     margin-bottom: 8px !important;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #home .ournav .shop {
-    right: 12%;
-    top: 80%;
-  }
-  #home .home__content {
-    background-position-x: 70%;
-    background-position-y: 0;
-  }
-  #home .home__content .home__text:before {
-    right: 12.8%;
-    top: -37%;
-  }
-  #home .home__content .home__text h1 {
-    font-size: 2.3rem;
-  }
-  #home .home__content .home__text h1:after {
-    right: 65.8%;
-    bottom: 304%;
-  }
-  #home .home__content .home__text h2 {
-    font-size: 2rem;
-  }
-  #home .home__content .home__text button {
-    margin-left: 90px;
-  }
-  #clothes, #glasses {
-    background-position-x: 24%;
-  }
-  #glasses {
-    background-position-x: 73% !important;
-  }
-  .clothes__text h1, .glasses__text h1 {
-    padding-right: 0 !important;
-    font-weight: 700;
-  }
-  .connect__content {
-    background-position-x: 35%;
-  }
-  .connect__content .connect__text h1 {
-    font-size: 2.4rem;
-  }
-  .connect__content .connect__text button {
-    margin-left: 9.5rem;
-  }
-  .connect__content .connect__text h5::before {
-    bottom: 70%;
-    left: 50.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
