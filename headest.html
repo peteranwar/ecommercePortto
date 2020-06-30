@@ -17,14 +17,14 @@
     />
     <link rel="stylesheet" href="js/jquery.exzoom.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-    <title>Document</title>
+    <title>Porto eCommerce</title>
   </head>
   <body>
     <!-- staaaaaart section hoooomeee -->
     <section id="home">
       <!-- pc naaaav -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light ournav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="./imgs/logo.png"  alt="logo"
         /></a>
         <button
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="index.html"
                 >HOME <span class="sr-only">(current)</span></a
               >
             </li>
@@ -334,7 +334,9 @@
                  </div>
                  <div class="add_to">
                     <div class="add_and_remove">
-                      <a href="#"> <i class="fas fa-minus"></i> </a> <p>1 </p> <a href="#"> <i class="fas fa-plus"></i></a>
+                      <button class="minus"> <i class="fas fa-minus"></i></button>
+                      <input type="text" id="value" value="1">
+                      <button class="plus"> <i class="fas fa-plus"></i></button>
                     </div>
                     <button>
                       <svg
@@ -596,7 +598,7 @@
                   <h4 class="text-muted">$9.00</h4>
                   <div class="add__to">
                     <i class="far fa-heart"></i>
-                    <button>
+                    <button class="btn-add">
                       <svg
                         class="bi bi-handbag"
                         width="1em"
@@ -634,7 +636,7 @@
                   <h4 class="text-muted">$9.00</h4>
                   <div class="add__to">
                     <i class="far fa-heart"></i>
-                    <button>
+                    <button class="btn-add">
                       <svg
                         class="bi bi-handbag"
                         width="1em"
@@ -673,7 +675,7 @@
                   <h4 class="text-muted">$9.00</h4>
                   <div class="add__to">
                     <i class="far fa-heart"></i>
-                    <button>
+                    <button class="btn-add">
                       <svg
                         class="bi bi-handbag"
                         width="1em"
@@ -711,7 +713,7 @@
                   <h4 class="text-muted">$9.00</h4>
                   <div class="add__to">
                     <i class="far fa-heart"></i>
-                    <button>
+                    <button class="btn-add">
                       <svg
                         class="bi bi-handbag"
                         width="1em"
@@ -749,7 +751,7 @@
                   <h4 class="text-muted">$9.00</h4>
                   <div class="add__to">
                     <i class="far fa-heart"></i>
-                    <button>
+                    <button class="btn-add">
                       <svg
                         class="bi bi-handbag"
                         width="1em"
@@ -779,7 +781,21 @@
           </div>
     </div>
    </section>
+    <!-- create a pop up add to card  -->
+    <div class="pop-up">
+      <div class="pop-up-content">
+        <p >You've just added this product to the cart:</p>
+        <h5>Product Short Name</h5>
 
+        <p class="text-muted">
+          Lorem ipsum dolor sit, amet  adipisicing <br> elit. 
+           consequatur tempora.  Veniam, laudantium.
+        </p>
+        <button>Go to cart page</button>
+        <button class="continue">Continue</button>
+      </div>
+    </div>
+    <!-- end of pop up  -->
    
 
     <footer id="footer">

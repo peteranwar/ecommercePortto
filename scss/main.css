@@ -89,18 +89,34 @@
 }
 
 #headest .add_to .add_and_remove a,
-#headest .add_to .add_and_remove p {
+#headest .add_to .add_and_remove input {
   border: 1px solid #dfdedc;
-  padding: 3px 10px;
+  width: 40px;
+  text-align: center;
   margin-bottom: 0;
+}
+
+#headest .add_to .add_and_remove .plus,
+#headest .add_to .add_and_remove .minus {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#headest .add_to .add_and_remove .plus:hover,
+#headest .add_to .add_and_remove .minus:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#headest .add_to .add_and_remove .plus i,
+#headest .add_to .add_and_remove .minus i {
+  color: white;
 }
 
 #headest .add_to button {
   padding: 5px 10px;
   background: white;
   border: 1px solid #dfdedc;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #headest .add_to button:hover {
@@ -108,15 +124,18 @@
   background: black;
 }
 
-#headest .add_to .add__to__wishlist i, #headest .add_to .add__to__compare i {
+#headest .add_to .add__to__wishlist i,
+#headest .add_to .add__to__compare i {
   padding: 10px;
   border: 1px solid #dfdedc;
   color: black;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-#headest .add_to .add__to__wishlist i:hover, #headest .add_to .add__to__compare i:hover {
+#headest .add_to .add__to__wishlist i:hover, #headest .add_to .add__to__wishlist i:focus-within,
+#headest .add_to .add__to__compare i:hover,
+#headest .add_to .add__to__compare i:focus-within {
   color: white;
   background: black;
 }
@@ -133,8 +152,8 @@
   background: #161616;
   padding: 7px 11px;
   border-radius: 50%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #headest .share a i {
@@ -190,7 +209,7 @@
 }
 
 #headest .banner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -200,8 +219,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #main {
@@ -213,7 +232,8 @@
   font-weight: 700;
 }
 
-#main h3, #main h5 {
+#main h3,
+#main h5 {
   color: black;
 }
 
@@ -278,7 +298,7 @@
 }
 
 #main .product__container a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -288,8 +308,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #main .product__container i {
@@ -302,8 +322,8 @@
   color: #aeaca7 !important;
   font-size: 15px;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #main .product__container p:hover {
@@ -343,7 +363,8 @@
   height: 15px;
 }
 
-#main #reviews th, #main #reviews td {
+#main #reviews th,
+#main #reviews td {
   padding: 10px;
 }
 
@@ -393,7 +414,9 @@
   align-items: center;
 }
 
-#featured__products .swiper-container-horizontal > .swiper-pagination-bullets, #featured__products .swiper-pagination-custom, #featured__products .swiper-pagination-fraction {
+#featured__products .swiper-container-horizontal > .swiper-pagination-bullets,
+#featured__products .swiper-pagination-custom,
+#featured__products .swiper-pagination-fraction {
   bottom: 0;
 }
 
@@ -847,7 +870,8 @@ html {
   width: 60px !important;
 }
 
-#clothes, #glasses, #featured__products {
+#clothes, #glasses,
+#featured__products {
   background: url("../imgs/bg-2.jpg");
   background-size: cover;
   background-position: center;
@@ -856,44 +880,56 @@ html {
   height: 120vh;
 }
 
-#clothes .clothes__text, #glasses .clothes__text, #clothes .glasses__text, #glasses .glasses__text, #featured__products .clothes__text, #featured__products .glasses__text {
+#clothes .clothes__text, #glasses .clothes__text, #clothes .glasses__text, #glasses .glasses__text,
+#featured__products .clothes__text,
+#featured__products .glasses__text {
   text-align: end;
   padding: 8rem 6rem;
 }
 
-#clothes .clothes__text h4, #glasses .clothes__text h4, #clothes .glasses__text h4, #glasses .glasses__text h4, #featured__products .clothes__text h4, #featured__products .glasses__text h4 {
+#clothes .clothes__text h4, #glasses .clothes__text h4, #clothes .glasses__text h4, #glasses .glasses__text h4,
+#featured__products .clothes__text h4,
+#featured__products .glasses__text h4 {
   text-align: center;
   padding-left: 15.2rem;
   font-weight: 400;
   margin-bottom: 0;
 }
 
-#clothes .clothes__text h1, #glasses .clothes__text h1, #clothes .glasses__text h1, #glasses .glasses__text h1, #featured__products .clothes__text h1, #featured__products .glasses__text h1 {
+#clothes .clothes__text h1, #glasses .clothes__text h1, #clothes .glasses__text h1, #glasses .glasses__text h1,
+#featured__products .clothes__text h1,
+#featured__products .glasses__text h1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding-right: 3rem;
 }
 
-#clothes .clothes__text button, #glasses .clothes__text button, #clothes .glasses__text button, #glasses .glasses__text button, #featured__products .clothes__text button, #featured__products .glasses__text button {
+#clothes .clothes__text button, #glasses .clothes__text button, #clothes .glasses__text button, #glasses .glasses__text button,
+#featured__products .clothes__text button,
+#featured__products .glasses__text button {
   padding: 12px 15px;
   background-color: #161616;
   margin-bottom: 20px;
 }
 
-#clothes .clothes__text button:hover, #glasses .clothes__text button:hover, #clothes .glasses__text button:hover, #glasses .glasses__text button:hover, #featured__products .clothes__text button:hover, #featured__products .glasses__text button:hover {
+#clothes .clothes__text button:hover, #glasses .clothes__text button:hover, #clothes .glasses__text button:hover, #glasses .glasses__text button:hover,
+#featured__products .clothes__text button:hover,
+#featured__products .glasses__text button:hover {
   opacity: 0.8;
 }
 
 #clothes .swiper-container .swiper-button-next, #glasses .swiper-container .swiper-button-next,
 #clothes .swiper-container .swiper-button-prev,
-#glasses .swiper-container .swiper-button-prev, #featured__products .swiper-container .swiper-button-next,
+#glasses .swiper-container .swiper-button-prev,
+#featured__products .swiper-container .swiper-button-next,
 #featured__products .swiper-container .swiper-button-prev {
   font-size: 25px;
   color: #161616;
 }
 
-#clothes .swiper-slide, #glasses .swiper-slide, #featured__products .swiper-slide {
+#clothes .swiper-slide, #glasses .swiper-slide,
+#featured__products .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -908,25 +944,30 @@ html {
   align-items: center;
 }
 
-#clothes .card, #glasses .card, #featured__products .card {
+#clothes .card, #glasses .card,
+#featured__products .card {
   border: none;
 }
 
-#clothes .card i, #glasses .card i, #featured__products .card i {
+#clothes .card i, #glasses .card i,
+#featured__products .card i {
   font-size: 12px;
 }
 
-#clothes .card p, #glasses .card p, #featured__products .card p {
+#clothes .card p, #glasses .card p,
+#featured__products .card p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-#clothes .card p:hover, #glasses .card p:hover, #featured__products .card p:hover {
+#clothes .card p:hover, #glasses .card p:hover,
+#featured__products .card p:hover {
   font-weight: 600;
   cursor: pointer;
 }
 
-#clothes .card .add__to, #glasses .card .add__to, #featured__products .card .add__to {
+#clothes .card .add__to, #glasses .card .add__to,
+#featured__products .card .add__to {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,7 +976,8 @@ html {
           align-items: baseline;
 }
 
-#clothes .card .add__to button, #glasses .card .add__to button, #featured__products .card .add__to button {
+#clothes .card .add__to button, #glasses .card .add__to button,
+#featured__products .card .add__to button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,7 +990,8 @@ html {
   border: 1px solid #dfdedc;
 }
 
-#clothes .card .add__to i, #glasses .card .add__to i, #featured__products .card .add__to i {
+#clothes .card .add__to i, #glasses .card .add__to i,
+#featured__products .card .add__to i {
   border: 1px solid #dfdedc;
   padding: 10px;
   margin: 3px;
@@ -961,17 +1004,20 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-#clothes .card .add__to i:first-child, #glasses .card .add__to i:first-child, #featured__products .card .add__to i:first-child {
+#clothes .card .add__to i:first-child, #glasses .card .add__to i:first-child,
+#featured__products .card .add__to i:first-child {
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
-#clothes .card .over-lay, #glasses .card .over-lay, #featured__products .card .over-lay {
+#clothes .card .over-lay, #glasses .card .over-lay,
+#featured__products .card .over-lay {
   position: relative;
   width: 100%;
 }
 
-#clothes .card a::after, #glasses .card a::after, #featured__products .card a::after {
+#clothes .card a::after, #glasses .card a::after,
+#featured__products .card a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -984,22 +1030,26 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-#clothes .card svg, #glasses .card svg, #featured__products .card svg {
+#clothes .card svg, #glasses .card svg,
+#featured__products .card svg {
   margin: 2px;
 }
 
-#clothes .card:hover i, #glasses .card:hover i, #featured__products .card:hover i {
+#clothes .card:hover i, #glasses .card:hover i,
+#featured__products .card:hover i {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#clothes .card:hover a::after, #glasses .card:hover a::after, #featured__products .card:hover a::after {
+#clothes .card:hover a::after, #glasses .card:hover a::after,
+#featured__products .card:hover a::after {
   display: block;
   -webkit-box-shadow: 0px 16px 28px -22px rgba(30, 30, 60, 0.84);
           box-shadow: 0px 16px 28px -22px rgba(30, 30, 60, 0.84);
 }
 
-#clothes .card:hover button, #glasses .card:hover button, #featured__products .card:hover button {
+#clothes .card:hover button, #glasses .card:hover button,
+#featured__products .card:hover button {
   background-color: #161616;
   color: white;
 }
@@ -1010,18 +1060,21 @@ html {
 #clothes .swiper-button-prev:after,
 #glasses .swiper-button-prev:after,
 #clothes .swiper-container-rtl .swiper-button-next:after,
-#glasses .swiper-container-rtl .swiper-button-next:after, #featured__products .swiper-button-next:after,
+#glasses .swiper-container-rtl .swiper-button-next:after,
+#featured__products .swiper-button-next:after,
 #featured__products .swiper-container-rtl .swiper-button-prev:after,
 #featured__products .swiper-button-prev:after,
 #featured__products .swiper-container-rtl .swiper-button-next:after {
   font-size: 20px;
 }
 
-#clothes .swiper-button-next, #glasses .swiper-button-next, #featured__products .swiper-button-next {
+#clothes .swiper-button-next, #glasses .swiper-button-next,
+#featured__products .swiper-button-next {
   right: 0px;
 }
 
-#clothes .swiper-button-prev, #glasses .swiper-button-prev, #featured__products .swiper-button-prev {
+#clothes .swiper-button-prev, #glasses .swiper-button-prev,
+#featured__products .swiper-button-prev {
   left: 0px;
 }
 
@@ -1195,6 +1248,47 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pop-up {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 5555555555555555;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.pop-up .pop-up-content {
+  width: 500px;
+  height: 250px;
+  background: url("../imgs/newsletter_popup_bg.jpg");
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pop-up .pop-up-content button {
+  padding: 7px 20px;
+  margin: 15px;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.pop-up .pop-up-content button:hover {
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 768px) {
@@ -1413,6 +1507,13 @@ html {
   .connect__content h2::after,
   .connect__content button::after {
     display: none;
+  }
+  #clothes, #glasses {
+    background-position-x: -225px;
+  }
+  .sunglasses {
+    background-position-x: 850px !important;
+    background-position-y: -50px !important;
   }
   .newsletter {
     -webkit-box-orient: vertical;

@@ -1,7 +1,6 @@
 $primary-color: #161616;
 $secondary-color: #dfdedc;
-@import 'headest' ;
-
+@import "headest";
 
 @mixin easeInOut {
   transition: all 0.4s ease-in-out;
@@ -13,31 +12,29 @@ $secondary-color: #dfdedc;
   box-sizing: border-box;
   // border: 1px solid red;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 // scroll to top
 .scrolltop {
-    padding: 10px 13px;
-    background: rgba(0, 0, 0, .8);
-    position: fixed;
-    right: 10px;
-    bottom: 0;
-    color: white;
-    border-radius: 6px 6px 0 0;
-    opacity: 0;
-    z-index: 11111;
-    @include easeInOut;
-    &:hover {
-      color:#fff;
-      background: rgba(0, 0, 0, .7);
-    }
+  padding: 10px 13px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  color: white;
+  border-radius: 6px 6px 0 0;
+  opacity: 0;
+  z-index: 11111;
+  @include easeInOut;
+  &:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 .scrolltop.active {
   opacity: 1;
 }
-
-
 
 // Home section
 #home {
@@ -91,7 +88,7 @@ html{
         background: $primary-color;
         // right: 150px;
         // top: 28px;
-        right: 20% ;
+        right: 20%;
         top: 5.5%;
       }
 
@@ -115,7 +112,7 @@ html{
           // right: 168px;
           // bottom: 70px;
           right: 37%;
-          bottom: 97% ;
+          bottom: 97%;
         }
       }
 
@@ -410,7 +407,8 @@ html{
   }
 }
 // clothes section
-#clothes, #featured__products {
+#clothes,
+#featured__products {
   background: url("../imgs/bg-2.jpg");
   background-size: cover;
   background-position: center;
@@ -649,9 +647,7 @@ html{
 #footer {
   background: rgba(0, 0, 0, 0.88);
   padding: 3rem 0;
-  
-  
-    
+
   h5,
   h6 {
     color: white;
@@ -687,15 +683,15 @@ html{
     padding-left: 10px;
     display: flex;
     border-radius: 20px;
-    
-    input:nth-child(1){
+
+    input:nth-child(1) {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       padding: 7px 10px;
-      
+
       &:focus {
-        outline:0 ;
-        box-shadow: 100px 0px 20px -12px blue;;
+        outline: 0;
+        box-shadow: 100px 0px 20px -12px blue;
       }
     }
     .btn {
@@ -704,15 +700,46 @@ html{
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       padding: 7px 10px;
-      
-      }
-    }
-    .newsletter {
-      display: flex;
-      align-items: center;
     }
   }
+  .newsletter {
+    display: flex;
+    align-items: center;
+  }
+}
+// start style pop-up
+.pop-up {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 5555555555555555;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  .pop-up-content {
+    width: 500px;
+    height: 250px;
+    background: url("../imgs/newsletter_popup_bg.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    button {
+      padding: 7px 20px;
+      margin: 15px;
+      color: white;
+      background-color: black;
+      font-weight: 500;
+      border-radius: 5px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
 
-
+// ending style pop-up
 
 @import "mobile";
