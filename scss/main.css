@@ -1510,10 +1510,12 @@ html {
   }
   #clothes, #glasses {
     background-position-x: -225px;
+    height: 100vh;
   }
   .sunglasses {
     background-position-x: 850px !important;
     background-position-y: -50px !important;
+    height: 100vh;
   }
   .newsletter {
     -webkit-box-orient: vertical;
@@ -1527,6 +1529,12 @@ html {
   }
   .newsletter h6 {
     margin-bottom: 8px !important;
+  }
+  .pop-up .pop-up-content {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
