@@ -128,7 +128,7 @@ const popUpContent = document.querySelector('.pop-up-content');
 
 btnsAdd.forEach((btn)=> {
  btn.addEventListener("click", () => {
-   popUp.style.transform  = "scale(1.1)";
+   popUp.style.transform  = "scale(1.0)";
  })
 });
 
