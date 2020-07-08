@@ -1,8 +1,4 @@
-$primary-color: #161616;
-$secondary-color: #dfdedc;
-@mixin easeInOut {
-  transition: all 0.5s ease-in-out;
-}
+
 // start to style headest section
 #headest {
   margin-top: 80px;
@@ -73,7 +69,6 @@ $secondary-color: #dfdedc;
       a,
       input {
         border: 1px solid $secondary-color;
-        // padding: 3px 13px;
         width: 40px;
         text-align: center;
         margin-bottom: 0;

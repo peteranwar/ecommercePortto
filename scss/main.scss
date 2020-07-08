@@ -39,14 +39,12 @@ html {
 // Home section
 #home {
   background: $secondary-color;
-  // width: 100vw;
-  // height: 100vh;
   overflow: hidden;
 
   .ournav {
     padding: 1rem 4.5rem 0;
     position: fixed;
-    z-index: 111111111111;
+    z-index: 11111;
     width: 100%;
     background-color: $secondary-color !important;
 
@@ -629,6 +627,10 @@ html {
       margin-top: 2rem;
       position: relative;
       background-color: black;
+      @include easeInOut()
+      &:hover {
+        opacity: .8;
+      }
 
       &::after {
         content: "";
@@ -718,7 +720,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  transition: all 1s ease;
+  transform-origin: top right;
+  transform: scale(0,0);
   .pop-up-content {
     width: 500px;
     height: 250px;

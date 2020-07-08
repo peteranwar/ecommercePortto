@@ -2,7 +2,7 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
   spaceBetween: 30,
   autoplay: true,
-  // direction: getDirection(),
+  speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -83,6 +83,7 @@ var swiper_2 = new Swiper(".swiper-container_2", {
 var swiper_3 = new Swiper(".swiper-container_3", {
   slidesPerView: 4,
   spaceBetween: 40,
+  speed: 800,
   // init: false,
   pagination: {
     el: ".swiper-pagination",
@@ -127,16 +128,16 @@ const popUpContent = document.querySelector('.pop-up-content');
 
 btnsAdd.forEach((btn)=> {
  btn.addEventListener("click", () => {
-   popUp.style.display = "flex";
+   popUp.style.transform  = "scale(1.1)";
  })
 });
 
 continu.addEventListener("click", () => {
-  popUp.style.display = "none";
+  popUp.style.transform  = "scale(0,0)";
 
 });
 popUp.addEventListener("click", () => {
-  popUp.style.display = "none";
+  popUp.style.transform  = "scale(0,0)";
   
 });
 popUpContent.addEventListener("click", (e) => {
